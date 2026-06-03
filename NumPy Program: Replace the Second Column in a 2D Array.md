@@ -12,8 +12,24 @@ To write a **NumPy** program that deletes the second column from a given 2D arra
 
 ## 🧾 Program
 
-Add code here
+```
+import numpy as np
+orig=np.array(eval(input()))
+new=np.array(eval(input()))
+print("Printing Original array")
+print(orig)
+modif=np.delete(orig,1,axis=1)
+print("Array after deleting column 2 on axis 1")
+print(modif)
+result=np.insert(modif,1,new,axis=1)
+print("Array after inserting column 2 on axis 1")
+print(result)
+```
 
 ## Output
+<img width="909" height="476" alt="Screenshot 2026-06-03 114205" src="https://github.com/user-attachments/assets/728c0d1f-f683-46f3-ae0b-009a1621c3a7" />
+
+
 
 ## Result
+Thus,the program has been executed successfully.
